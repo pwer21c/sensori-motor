@@ -1,0 +1,9 @@
+{% if latest_verbe_list %}
+    <ul>
+    {% for action in latest_verbe_list %}
+        <li><a href="/result/{{ action.id }}/">{{ action.verbe }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No verbes are available.</p>
+{% endif %}
